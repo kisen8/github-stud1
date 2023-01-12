@@ -1,107 +1,62 @@
-/* цвет оновного текста #000000;
-
-/* цвет вторичного текста rgba(0, 0, 0, 0.8); */
-
-/* акцентный цвет #18A0FB; */
-
-/* белый #FFFFFF; */
-
-/* вторичный цвет фона #E5E5E5; */
-
-:root {
-  --primary-text-color: rgba(0, 0, 0, 0.8);
-  --title-text-color: #000000;
-  --accent-color: #18a0fb;
-  --primary-white-color: #ffffff;
-}
-
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-  font-family: Montserrat, sans-serif;
-  letter-spacing: -0.015em;
-  font-size: 18px;
-  line-height: 1.67;
+  background-color: rgb(155, 209, 233);
+  padding: 0;
+  margin: 5px;
 }
-
-.list {
+a {
+  margin: 0;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(17, 206, 0);
+  display: block;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(255, 0, 0);
+}
+h1 {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+}
+h2 {
+  font-size: 30px;
+  font-style: oblique;
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+li {
   list-style: none;
 }
-
-.logo {
-  color: var(--title-text-color);
-  font-family: Comfortaa, cursive;
-  font-family: Montserrat;
-  font-size: 28px;
-  line-height: 1.14;
-  text-decoration: none;
+.progs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  padding: 10px 150px;
+  margin: 0;
+  /* width: 500px; */
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: rgb(4, 104, 255);
+  text-align: left;
 }
 
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
+.list a:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-/* site-nav */
-.site-nav .link {
-  color: var(--accent-color);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.2;
-  text-decoration: none;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--title-text-color);
-}
-
-/* hero */
-.hero-title {
-  color: var(--title-text-color);
-
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 1.43;
-  text-align: center;
-}
-
-/* sections */
-.section-title {
-  color: var(--title-text-color);
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.section-description {
-  font-size: 36px;
-  line-height: 1.39;
-}
-
-/* Features and Examples  */
-.feature-list .title,
-.work-list .title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-/* Buttons */
-.button {
-  color: var(--title-text-color);
-  background-color: var(--primary-white-color);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.2;
-  text-decoration: none;
-}
-.button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
-.button.secondary {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
+img {
+  width: 350px;
+  height: 350px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
